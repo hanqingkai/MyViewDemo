@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyViewDemo</string>
+    <string name="title_bttton">输入</string>
+    <string name="high_score_message">最高分</string>
+</resources>

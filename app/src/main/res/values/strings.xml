@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyViewDemo</string>
+    <string name="text_tip_read">已读</string>
+    <string name="text_tip_top">置顶</string>
+    <string name="text_tip_delete">删除</string>
+
+    <string name="hello_blank_fragment">Hello Detail fragment</string>
+    <string name="title_message">Calculation Test</string>
+    <string name="title_bttton">ENTER</string>
+    <string name="high_score_message">High Score:%d</string>
+</resources>

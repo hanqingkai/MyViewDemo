@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <!--大致这个意思，具体需要自己修改 shape要改成selector-->
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_input_btn_left"
+        android:gravity="center"
+        android:text="-"
+        android:id="@+id/tv_minus"
+        android:textColor="#3485ff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_input_btn_center"
+        android:gravity="center"
+        android:id="@+id/et_value"
+        android:hint="0" />
+
+    <TextView
+        android:id="@+id/tv_plus"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_input_btn_right"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#3485ff"
+        android:textSize="30sp" />
+
+</LinearLayout>
