@@ -12,16 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jetpack.gallery.activity.GalleryActivity">
+        <activity
+            android:name=".navigationdrawer.CollapsingActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bottonavigation.BottomNavigationActivity">
+        <activity android:name=".jetpack.gallery.activity.GalleryActivity">
 
         </activity>
+        <activity android:name=".bottonavigation.BottomNavigationActivity" />
         <activity android:name=".jetpack.room.RoomBasicActivity" />
         <activity android:name=".jetpack.question.QuestionsActivity" />
         <activity android:name=".jetpack.nav.NavigationActivity" />
