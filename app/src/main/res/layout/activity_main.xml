@@ -115,7 +115,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
@@ -271,4 +272,37 @@
             android:textColor="@android:color/white"
             android:textSize="15sp" />
     </com.example.myviewdemo.TagLayout>
+
+    <com.example.myviewdemo.MessageBubbleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.example.myviewdemo.PathView
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.example.myviewdemo.JiKeLikeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.example.myviewdemo.EditTextWithClear
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="this is a EditText"
+        app:clearIcon="@drawable/ic_baseline_clear_24" />
+
+
+    <com.example.myviewdemo.MyMoveAxisesView
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/myView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

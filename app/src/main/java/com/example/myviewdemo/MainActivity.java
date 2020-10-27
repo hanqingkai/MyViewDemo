@@ -11,6 +11,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LifecycleObserver;
 
 import com.blankj.utilcode.util.ToastUtils;
 
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         inintProgressBar();
         initShapeView();
         initSlideBar();
+        initMoveAxises();
     }
 
     private void initSlideBar() {
@@ -188,5 +190,10 @@ public class MainActivity extends AppCompatActivity {
             xiaoming.setCurrentProgress(currentStep);
         });
         valueAnimator.start();
+    }
+
+    private void initMoveAxises() {
+        MyMoveAxisesView myMoveAxisesView = findViewById(R.id.myView);
+        getLifecycle().addObserver(myMoveAxisesView);
     }
 }

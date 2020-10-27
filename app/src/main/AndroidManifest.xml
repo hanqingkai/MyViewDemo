@@ -4,6 +4,7 @@
     package="com.example.myviewdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -12,14 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".activity.DimpleViewActivity">
+
+        </activity> <!-- 通过切换进入的activity来展示相应的内容 -->
         <activity
             android:name=".navigationdrawer.CollapsingActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".jetpack.gallery.activity.GalleryActivity">
 
@@ -33,7 +38,14 @@
             android:name=".LoginActivity"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"    android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
