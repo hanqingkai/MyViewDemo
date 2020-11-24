@@ -27,9 +27,3 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-//compileKotlin2Js.doLast{
-//
-//}
-//compileKotlin2Js{
-//    kotlinOptions.outputFile="${projectDir}/web/app.js"
-//}
