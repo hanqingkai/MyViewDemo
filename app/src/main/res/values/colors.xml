@@ -14,5 +14,7 @@
     <color name="minDefaultColor">#00ff00</color>
     <color name="hourDefaultColor">#0000ff</color>
     <color name="scaleDefaultColor">#ffffff</color>
+    <color name="colorYellow">#FFC107</color>
+
 
 </resources>

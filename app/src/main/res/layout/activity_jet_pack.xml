@@ -237,7 +237,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline6"
             app:layout_constraintVertical_bias="0.138"
-            app:srcCompat="@drawable/ic_undo_black_24dp" />
+            app:src="@drawable/ic_undo_black_24dp" />
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -250,7 +250,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toTopOf="@+id/guideline6"
             app:layout_constraintVertical_bias="0.134"
-            app:srcCompat="@drawable/ic_sync_black_24dp" />
+            app:src="@drawable/ic_sync_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
